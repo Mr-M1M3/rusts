@@ -15,6 +15,7 @@ Basically rusts exports classes that implements spceific rust standard library m
 Currently rusts exports following classes:
 
 * [Maybe](#Maybe) (`Option<T>` equivalent of rust)
+* [Result](#Result)
 
 #### Maybe`<T>`
 
