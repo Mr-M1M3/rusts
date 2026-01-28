@@ -1,0 +1,16 @@
+{
+  "name": "@mr-m1m3/rusts",
+  "version": "0.0.1",
+  "description": "Rust l;ike utilities for typescript",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "@mr-m1m3",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.1",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "type": "module"
+}
