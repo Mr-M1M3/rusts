@@ -94,7 +94,7 @@ maybe_a_number.transform((val) => {
 }); // {is_value: true}
 ```
 
-#### Result `<T, E>`
+#### Result  `<T, E>`
 
 typescript equivalent of rust `Result<T, E>`. It is use extensively in error handling. If a function can fail, it should always return `Result<T, E>` instead of throwing. Whoever calling the function should be the one to decide what to do with it. This approach also helps easily type a function that can fail. It takes advantage of typescript\'s discriminated union. Here, `T` represents the expected value and `E` represent the value if something happens really bad.
 
@@ -141,8 +141,8 @@ type ErrMsg = {
   status: number;
 };
 
-//                          +-------> ok variant or the value of a successfull operation
-//                         |  +-----> error variant or the value of a failed operation
+//                        +-------> ok variant or the value of a successfull operation
+//                        |  +-----> error variant or the value of a failed operation
 //                        |  |
 //                Result<T, E>
 
