@@ -27,6 +27,10 @@
       "types": "./dist/types/result/result.d.ts"
     }
   },
+  "files": [
+    "./src",
+    "./dist"
+  ],
   "keywords": [
     "rust",
     "utilities",
