@@ -14,6 +14,7 @@
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "rootDir": "src",
+    "baseUrl": ".",
     "outDir": "dist",
     "sourceMap": true,
     "composite": false,
@@ -22,7 +23,10 @@
     "declarationDir": "./dist/types",
     "lib": [
       "es6"
-    ]
+    ],
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*", "tests/**/*"]
+  "include": ["src/**/*"]
 }

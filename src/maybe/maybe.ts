@@ -7,9 +7,9 @@ export default class Maybe<T> {
   //useful methods
   public is_value(): boolean {
     if (this.value === null) {
-      return true;
-    } else {
       return false;
+    } else {
+      return true;
     }
   }
   public is_not_a_value(): boolean {

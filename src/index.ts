@@ -1,2 +1,3 @@
 import Maybe from "./maybe/maybe.js";
-export { Maybe };
+import Result from "./result/result.js";
+export { Maybe, Result };

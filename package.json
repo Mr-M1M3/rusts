@@ -1,6 +1,6 @@
 {
   "name": "rsts",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Rust liike utilities for typescript",
   "homepage": "https://github.com/mr-m1m3/rsts",
   "bugs": {
@@ -11,20 +11,22 @@
     "url": "git+https://github.com/mr-m1m3/rsts.git"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test:watch": "vitest",
+    "test": "vitest run"
   },
   "exports": {
     ".": {
-      "default": "./dist/index.js",
-      "types": "./dist/types/index.d.ts"
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./maybe": {
-      "default": "./dist/maybe/maybe.js",
-      "types": "./dist/types/maybe/maybe.d.ts"
+      "types": "./dist/types/maybe/maybe.d.ts",
+      "default": "./dist/maybe/maybe.js"
     },
     "./result": {
-      "default": "./dist/result/result.js",
-      "types": "./dist/types/result/result.d.ts"
+      "types": "./dist/types/result/result.d.ts",
+      "default": "./dist/result/result.js"
     }
   },
   "files": [
@@ -44,7 +46,9 @@
   "license": "ISC",
   "packageManager": "pnpm@10.28.1",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "@types/node": "^25.1.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   },
   "type": "module"
 }
