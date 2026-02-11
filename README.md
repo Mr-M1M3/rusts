@@ -10,9 +10,9 @@ npm i ferric-oxide
 
 ## Usage
 
-Basically rusts exports classes that implements spceific rust standard library modules.
+Basically ferric-oxide exports classes that implements spceific rust standard library modules.
 
-Currently rusts exports following classes:
+Currently ferric-oxide exports following classes:
 
 * [Maybe](#Maybe) (`Option<T>` equivalent of rust)
 * [Result](#Result)
@@ -23,7 +23,7 @@ Basically a wrapper around `null`. Use it when a value can either be something o
 
 ```typescript
 
-import {Maybe} from "@mr-m1m3/rusts";
+import {Maybe} from "@mr-m1m3/ferric-oxide";
 
 // contains some value
 const maybe_a_number = new Maybe(100);
@@ -130,7 +130,7 @@ function could_fail(): Result<Data, ErrMsg>{
 The instance comes with some useful methods:
 
 ```typescript
-import Result from "@mr-m1m3/rusts/result";
+import Result from "@mr-m1m3/ferric-oxide/result";
 
 type Data = {
   name: string;
